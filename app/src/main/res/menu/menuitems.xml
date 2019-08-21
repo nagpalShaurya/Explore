@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:showAsAction="never"
+        android:title="@string/create_new_poll"
+        android:id="@+id/menu_createpoll">
+    </item>
+    <item
+          app:showAsAction="never"
+          android:title="@string/view_created_polls"
+          android:id="@+id/menu_allpolls">
+
+    </item>
+    <item
+        android:id="@+id/menu_results"
+        android:title="View Results"
+        app:showAsAction="never">
+
+
+    </item>
+
+</menu>

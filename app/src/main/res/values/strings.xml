@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Explore</string>
+    <string name="email">Email</string>
+    <string name="password1">Password</string>
+    <string name="register_user">Register User</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_votebox">Welcome To VoteBox</string>
+    <string name="having_issues_report">Having issues? Report</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="add_employee">Add Employee</string>
+    <string name="view_employees1">View Employees</string>
+    <string name="view_employees">View Employees</string>
+    <string name="register_employee1">Register Employee</string>
+    <string name="name">Name</string>
+    <string name="id">ID</string>
+    <string name="password">Password</string>
+    <string name="register_employee">Register Employee</string>
+    <string name="create_new_poll">Create New Poll</string>
+    <string name="view_created_polls">View Created Polls</string>
+    <string name="logout">Logout</string>
+    <string name="set_title">Set Title</string>
+    <string name="enter_title_here">Enter Title Here...</string>
+    <string name="query">Query</string>
+    <string name="enter_query_here">Enter Query Here...</string>
+    <string name="description1">Description</string>
+    <string name="describe_your_poll">Describe your poll....</string>
+    <string name="publish">Publish Poll</string>
+    <string name="about">About:</string>
+    <string name="description">Description</string>
+    <string name="enter_your_id_to_proceed">Enter Your ID to proceed</string>
+    <string name="submit_response">Submit response</string>
+    <string name="write_your_reviews">Write your reviews</string>
+    <string name="you_have_alraedy_submitted_your_response">You have already submitted your response</string>
+</resources>

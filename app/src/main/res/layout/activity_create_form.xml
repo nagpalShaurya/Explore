@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".submitResponse">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="Title"
+                android:textSize="40sp" />
+
+            <TextView
+                android:background="@color/lightgrey"
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Description"
+                android:textSize="20sp" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_margin="12dp"
+                android:textSize="20sp"
+                android:text="Poll:-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:id="@+id/tv_query"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                 />
+
+            <TextView
+                android:textSize="26sp"
+                android:textColor="@color/black"
+                android:text="Your Response:"
+                android:id="@+id/tvStatus"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-35dp"
+                android:text="Answer"
+                android:textColor="@color/red"
+                android:textSize="24sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radio_maybe"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="May be"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginTop="18dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Feedback:-"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/et_feedback"
+                android:textSize="25sp"
+                android:layout_margin="15dp"
+                android:hint="Your reviews here"
+                android:background="@color/heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textColor="@color/black"
+                android:background="@drawable/btnbg"
+                android:layout_margin="22dp"
+                android:id="@+id/btn_submit"
+                android:layout_width="300dp"
+
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Submit response"/>
+
+            <TextView
+
+                android:id="@+id/tv_btnreplace"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="@string/you_have_alraedy_submitted_your_response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/btn_logoutfromsubmit"
+                android:text="LOGOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

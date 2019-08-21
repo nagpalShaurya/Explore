@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradbck"
+    tools:context=".chooseActivity">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome_admin"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_alignParentTop="true"
+        android:textStyle="italic|bold" />
+    <include
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        layout="@layout/choose_layout">
+    </include>
+    <Button
+        android:id="@+id/btn_logout"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="16sp"
+        android:text="@string/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

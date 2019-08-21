@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:background="@drawable/grad1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/set_title"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/input_bg"
+                android:hint="@string/enter_title_here"
+                android:inputType="textMultiLine"
+                android:padding="9dp" />
+
+            <TextView
+                android:id="@+id/tv_query"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/query"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/input_bg"
+                android:padding="9dp">
+
+                <EditText
+                    android:id="@+id/et_query"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@null"
+                    android:hint="@string/enter_query_here"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/description"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="7dp"
+                android:background="@drawable/input_bg2">
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="7dp"
+                    android:background="@null"
+                    android:hint="@string/describe_your_poll"
+                    android:inputType="textMultiLine"
+                    android:padding="9dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnpublish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="25dp"
+                android:background="@drawable/stroke_bg"
+                android:text="@string/publish"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+

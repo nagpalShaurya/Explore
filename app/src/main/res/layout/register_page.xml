@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity">
+
+
+
+    <ImageView
+        android:id="@+id/img_client"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/employeeicon" />
+
+    <EditText
+        android:id="@+id/et_regname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_client"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="@string/name"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/et_regid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="@string/id"
+        android:inputType="number"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/et_regemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/et_regpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btn_regemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regpass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/stroke_bg"
+        android:padding="15dp"
+        android:text="@string/register_employee"
+        android:textSize="16sp" />
+
+</RelativeLayout>

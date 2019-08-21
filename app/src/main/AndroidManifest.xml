@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.explore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash"
+            android:label="VoteBox">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".piecharts"
+            android:exported="true" />
+        <activity
+            android:name=".results"
+            android:label="Results" />
+        <activity
+            android:name=".createForm"
+            android:exported="true"
+            android:label="Poll" />
+        <activity
+            android:name=".fetchlist"
+            android:label="Welcome Employee" />
+        <activity
+            android:name=".testFormStatus"
+            android:exported="true" />
+        <activity android:name=".allPolls_admin" />
+        <activity
+            android:name=".test"
+            android:exported="true"
+            android:label="VoteBox" />
+        <activity
+            android:name=".submitResponse"
+            android:exported="true"
+            android:label="Poll"
+            android:parentActivityName=".fetchlist">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".fetchlist" />
+        </activity>
+        <activity
+            android:name=".allPollsActivity"
+            android:exported="true"
+            android:label="All Polls"
+            android:parentActivityName=".chooseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chooseActivity" />
+        </activity>
+        <activity
+            android:name=".newpollActivity"
+            android:exported="true"
+            android:label="Create Poll"
+            android:parentActivityName=".chooseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".chooseActivity" />
+        </activity>
+        <activity
+            android:name=".ViewUsers"
+            android:exported="true"
+            android:label="All Employees"
+            android:parentActivityName=".chooseActivity" />
+        <activity
+            android:name=".registerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".chooseActivity"
+            android:exported="true"
+            android:label="VoteBox" />
+        <activity
+            android:name=".MainActivity"
+            android:label="VoteBox">
+
+        </activity>
+
+        <service android:name=".MyMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

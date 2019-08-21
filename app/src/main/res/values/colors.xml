@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#16405C</color>
+    <color name="colorPrimary">#25576F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#F8F7F7</color>
+    <color name="red">#D32727</color>
+    <color name="black">#111</color>
+    <color name="textLight">#33cc5a</color>
+    <color name="textBright">#0C0B0B</color>
+    <color name="heading">#8D8989</color>
+    <color name="votecolor">#302F2F</color>
+    <color name="lightgrey">#BEAFAFAF</color>
+</resources>
